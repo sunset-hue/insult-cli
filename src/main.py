@@ -10,6 +10,7 @@ def insult():
     a.add_argument("me", action="store_true", required=False)
     a.add_argument("-insult", action="store_true", required=False)
     a.add_argument("--path", action="store_const", required=False)
+    a.add_argument("--type", action="store_const")
     a.add_argument("you", action="store_true", required=False)
     a.add_argument("-compliment", action="store_true", required=False)
     a.add_argument("--help", action="store_true", required=False)

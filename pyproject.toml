@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+
+
+[project]
+name = "insult"
+authors = [{name = "sunset-hue", email = "heyimnottellinguthis@no.com"}]
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "rich",
+    "argparse"
+]
+description = "A tool to insult you, if insulting yourself isn't enough"
+readme = "README.md"
+
+[project.scripts]
+insult = "src.main:insult"
+# the insult func is meant to be like a "group" type function that just accepts arguments to it, not the file itself
+
+
+
+

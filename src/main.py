@@ -14,5 +14,7 @@ def insult():
     a.add_argument("you", action="store_true", required=False)
     a.add_argument("-compliment", action="store_true", required=False)
     a.add_argument("--help", action="store_true", required=False)
-    a.parse_args()
-    pass
+    args = a.parse_args()
+    for i in args.__dict__:
+        if callable(args.__dict__[i]):
+            continue

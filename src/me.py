@@ -56,4 +56,19 @@ def insult(console: consl.Console):
     console.print(txt)
 
 
-def compliment(console: consl.Console): ...
+def compliment(console: consl.Console):
+    syntx = ""
+    num = random.randint(0, len(os.listdir(".")) - 1)
+    for i in os.listdir("."):
+        if os.listdir(".")[n] == num:
+            syntx = Syntax.from_path(
+                "./" + i, line_range=(random.randint(1, 10), random.randint(11, 35))
+            )
+        n += 1
+    pnl = Panel(
+        title="Complimenting Myself (Because I have high self esteem)", renderable=syntx
+    )
+    txt = Text.assemble(
+        ("Let's see how I did in complimenting myself! \n", "bold indian_red"),
+        COMPLIMENT,
+    )

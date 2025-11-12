@@ -72,3 +72,6 @@ def compliment(console: consl.Console):
         ("Let's see how I did in complimenting myself! \n", "bold indian_red"),
         COMPLIMENT,
     )
+    txt.align("center",50)
+    console.print(pnl)
+    console.print(txt)

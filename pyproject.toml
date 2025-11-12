@@ -17,7 +17,7 @@ description = "A tool to insult you, if insulting yourself isn't enough"
 readme = "README.md"
 
 [project.scripts]
-insult = "src.main:insult"
+insult = "insult.main:insult"
 # the insult func is meant to be like a "group" type function that just accepts arguments to it, not the file itself
 
 
